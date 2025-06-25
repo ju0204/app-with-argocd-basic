@@ -24,5 +24,6 @@ jobs:
         git config --local user.email "p1106000@gmail.com"
         git config --local user.name "ju0204"
         git add .
-        git commit -m "Update nginx image to latest"
+        # git commit -m "Update nginx image to latest"
+        git diff --cached --quiet || git commit -m "Update replicas count"
         git push
